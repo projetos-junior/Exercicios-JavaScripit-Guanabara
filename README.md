@@ -10,3 +10,5 @@ Exercícios do Curso de JavaScripit do Professor Guanabara.
 Criado manipulação de algumas tags HTML de acordo com a hora do dia, modificando texto, imagem e a cor do background do Body em JavaScript.
 
 Finalizado o Exercicio 1.
+
+Foi adicionado minutos e Texto de Bom Dia, Boa Tarde e Boa Noite, melhorias feita. 
