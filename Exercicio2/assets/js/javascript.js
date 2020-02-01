@@ -9,8 +9,8 @@ function verificar(){
         var fsex = document.getElementsByName('radsex')
         var idade = ano -  Number(fano.value)
         var genero = ' '
-        var img = document.createElement('img')
-        img.setAttribute('id', 'foto')
+        var img = document.createElement('img')// cria o elemento img
+        img.setAttribute('id', 'foto') //atribui o ID no elemento img
         //Checa qual radio esta marcado.
         if (fsex[0].checked) {
             genero = 'Homen'
