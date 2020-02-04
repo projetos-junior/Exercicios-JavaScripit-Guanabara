@@ -1,26 +1,30 @@
-*{
+* {
     margin: 0 auto;
     padding: 0px;
 }
 
-body{
+body {
     background-color: rgb(127, 255, 212);
 }
-header{
+
+header {
     color: white;
     text-align: center;
 }
-section{
+
+section {
     background-color: white;
     border-radius: 10px;
     padding: 15px;
     width: 500px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.404);
 }
-div{
+
+div {
     text-align: center;
 }
-footer{
+
+footer {
     color: white;
     text-align: center;
     margin-top: 10px;
