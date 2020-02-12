@@ -26,3 +26,7 @@ Verificador de idade
 3º inseri uma imagem de acordo com a idade.
 
 ----------------------------------------------------------------------------------------
+
+Exercicio 3
+
+Criar um contador, o mesmo vai contar de acordo com os dados digitados.
