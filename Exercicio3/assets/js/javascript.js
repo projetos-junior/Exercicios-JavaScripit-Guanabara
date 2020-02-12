@@ -1,57 +1,33 @@
-function verificar() {
-    var data = new Date()
-    var ano = data.getFullYear()
-    var fano = document.getElementById('txtano')
-    var res = document.querySelector('div#res')
-    
-    if (fano.value.length == 0 || Number(fano.value) > ano) {
-        window.alert('[erro] Verifique os dados e tente novamente')
+function contar() {
+    let ini = document.getElementById('txtinicio')
+    let fim = document.getElementById('txtfim')
+    let pas = document.getElementById('txtpasso')
+    let res = document.getElementById('res')
+
+    if (ini.value.length == 0 || fim.value.length == 0 || pas.value.length == 0) {
+       res.innerHTML = 'Impossivel contar'
     } else {
-        var fsex = document.getElementsByName('radsex')
-        var idade = ano - Number(fano.value)
-        var genero = ' '
-        var img = document.createElement('img') // cria o elemento img
-        img.setAttribute('id', 'foto') //atribui o ID no elemento img
-        //Checa qual radio esta marcado.
-        if (fsex[0].checked) {
-            genero = 'Homen'
-            if (idade >= 0 && idade < 10) {
-                //criança
-                img.setAttribute('src', 'assets/img/img-menino.png')
-
-            } else if (idade < 21) {
-                //JOvem
-                img.setAttribute('src', 'assets/img/img-jovem-m.png')
-
-            } else if (idade < 50) {
-                //Adulto
-                img.setAttribute('src', 'assets/img/img-homem.png')
-            } else {
-                //idoso
-                img.setAttribute('src', 'assets/img/img-idoso-m.png')
-            }
-        } else if (fsex[1].checked) {
-            genero = 'Mulher'
-            if (idade >= 0 && idade < 10) {
-                //criança f
-                img.setAttribute('src', 'assets/img/img-menina.png')
-
-            } else if (idade < 21) {
-                //JOvem f
-                img.setAttribute('src', 'assets/img/img-jovem-f.png')
-
-            } else if (idade < 50) {
-                //Adulto f
-                img.setAttribute('src', 'assets/img/img-mulher.png')
-
-            } else {
-                //idoso f
-                img.setAttribute('src', 'assets/img/img-idoso-f.png')
-
-            }
-        }
-        res.style.textAlign = 'center' // Centraliza o testo via JavaScript
-        res.innerHTML = `Detectamos ${genero} com ${idade} anos.`
-        res.appendChild(img)
+       res.innerHTML = 'Contando: <br>'
+       let i = Number(ini.value)
+       let f = Number(fim.value)
+       let p = Number(pas.value)
+       if(p <= 0){
+           window.alert('Passo inválido! Considere PASSO 1')
+           p = 1
+       } 
+       if (i < f) {
+           //Contagem Crecente
+           for(let c = i; c <= f; c += p)
+           res.innerHTML += `${c} \u{1F449}` 
+           
+       } else {
+           //Contagem decrecente
+           for (let c = i; c >= f; c -= p) {
+               res.innerHTML += `${c} \u{1F449}`
+               
+           }
+           
+       }
+       res.innerHTML += `\u{1F3C1}`
     }
 }
