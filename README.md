@@ -31,4 +31,4 @@ Exercicio 3
 
 Criar um contador, o mesmo vai contar de acordo com os dados digitados.
 
-Condados Crecente e decrecente.
+Condados Crescente e decrescente.
