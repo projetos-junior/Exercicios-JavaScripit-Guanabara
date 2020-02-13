@@ -32,3 +32,9 @@ Exercicio 3
 Criar um contador, o mesmo vai contar de acordo com os dados digitados.
 
 Contados Crescente e decrescente.
+
+---------------------------------------------------------------------------------------
+
+Exercicio 4
+
+Tabuada 
