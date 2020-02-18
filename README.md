@@ -38,3 +38,19 @@ Contados Crescente e decrescente.
 Exercicio 4
 
 Tabuada 
+
+----------------------------------------------------------------------------------------
+
+Exercicio 5
+
+Criado um analisador de Número 
+
+Digitar numero de 1 a 100
+
+1° informa quantos número foi cadastrado 
+
+2º informa maior e menor número digitado
+
+3º Soma todos os números
+
+4º media dos números
