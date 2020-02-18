@@ -37,19 +37,20 @@ function adicionar() {
         if (valores.length == 0) {
             alert('Adicionar Valores antes de finalizar')
         } else {
-            let tot = valores.length
+            let tot = valores.length // Mostrar quantidade de array cadastrado
             let maior = valores[0]
             let menor = valores[0]
             let soma = 0 
             let media = 0
+            //Verifica o maior e menor numerro cadastrado
             for(let pos in valores){
-                soma += valores[pos]
+                soma += valores[pos]// Soma todos os numeros
                 if (valores [pos] > maior)
                 maior = valores[pos]
                 if (valores[pos] < menor)
                 menor = valores[pos]
             }
-            media = soma / tot
+            media = soma / tot// Media de todos os números digitados
             res.innerHTML = ''
             res.innerHTML += `<p>Ao todo, tem ${tot} números cadastrados.</p>`
             res.innerHTML += `<p>O maior valor informado foi ${maior}.</p>`
